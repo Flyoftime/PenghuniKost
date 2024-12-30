@@ -1,0 +1,28 @@
+/* Import the Montserrat font at the very top */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{scroll-behavior: smooth;}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif; /* Corrected font-family order */
+}
